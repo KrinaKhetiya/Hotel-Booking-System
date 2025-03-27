@@ -28,10 +28,6 @@ The **Hotel Booking System** is a web-based application that allows users to sea
 git clone [https://github.com/yourusername/Hotel-Booking-System.git](https://github.com/KrinaKhetiya/Hotel-Booking-System)
 cd Hotel-Booking-System
 
-# Setup Environment Variables
-# Create a .env file in the root directory and add necessary configurations (e.g., database credentials, API keys)
-
-
 
 ## 🤝 Contribution
 Contributions are welcome! Please follow these steps:
