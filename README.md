@@ -22,11 +22,13 @@ The **Hotel Booking System** is a web-based application that allows users to sea
 - **Payment Gateway**: 
 
 
+
 ## 📦 Installation & Setup
 
 # Clone the Repository
 git clone [https://github.com/yourusername/Hotel-Booking-System.git](https://github.com/KrinaKhetiya/Hotel-Booking-System)
 cd Hotel-Booking-System
+
 
 
 ## 🤝 Contribution
@@ -35,8 +37,10 @@ Contributions are welcome! Please follow these steps:
 # Fork the repository
 git checkout -b feature-branch
 
+
 # Commit changes
 git commit -m 'Add new feature'
+
 
 # Push to the branch
 git push origin feature-branch
