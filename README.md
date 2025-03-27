@@ -15,40 +15,21 @@ The **Hotel Booking System** is a web-based application that allows users to sea
 
 
 ## 🛠 Technologies Used
-- **Frontend**: React.js / Angular / Vue.js (Choose based on your stack)
-- **Backend**: Node.js with Express / Django / Flask
-- **Database**: MySQL / PostgreSQL / MongoDB
-- **Authentication**: JWT / OAuth
-- **Payment Gateway**: Stripe / PayPal
+- **Frontend**: 
+- **Backend**:
+- **Database**: 
+- **Authentication**: 
+- **Payment Gateway**: 
 
 
 ## 📦 Installation & Setup
 
 # Clone the Repository
-git clone https://github.com/yourusername/Hotel-Booking-System.git
+git clone [https://github.com/yourusername/Hotel-Booking-System.git](https://github.com/KrinaKhetiya/Hotel-Booking-System)
 cd Hotel-Booking-System
-
-# Install Dependencies
-npm install  # For Node.js backend
-cd client && npm install  # For frontend dependencies
 
 # Setup Environment Variables
 # Create a .env file in the root directory and add necessary configurations (e.g., database credentials, API keys)
-
-# Run the Application
-npm start  # Start backend
-cd client && npm start  # Start frontend
-
-
-
-## 📌 API Endpoints (Example)
-| Method | Endpoint             | Description                |
-|--------|----------------------|----------------------------|
-| GET    | `/api/hotels`        | Get list of hotels        |
-| GET    | `/api/hotels/:id`    | Get details of a hotel    |
-| POST   | `/api/bookings`      | Create a new booking      |
-| GET    | `/api/bookings/:id`  | Get booking details       |
-| DELETE | `/api/bookings/:id`  | Cancel a booking         |
 
 
 
