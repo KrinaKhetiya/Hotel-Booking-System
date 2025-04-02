@@ -26,7 +26,7 @@ The **Hotel Booking System** is a web-based application that allows users to sea
 ## 📦 Installation & Setup
 
 # Clone the Repository
-git clone [https://github.com/yourusername/Hotel-Booking-System.git](https://github.com/KrinaKhetiya/Hotel-Booking-System)
+git clone [https://github.com/KrinaKhetiya/Hotel-Booking-System.git](https://github.com/KrinaKhetiya/Hotel-Booking-System)
 cd Hotel-Booking-System
 
 
