@@ -4,11 +4,37 @@ using namespace std;
 
 // for room
 class Room {
-   
+   public:
+    int roomNumber;
+    string customerName;
+    bool isBooked;
+
+    Room(int number) {
+        roomNumber = number;
+        isBooked = false;
+    }
 };
 
 // for hotel system
 class Hotel {
+private:
+    static const int MAX_ROOMS = 10;
+    Room* rooms[MAX_ROOMS];
+
+public:
+    Hotel() {
+        for (int i = 0; i < MAX_ROOMS; i++) {
+            rooms[i] = new Room(i + 1);
+        }
+    }
+
+    ~Hotel() {
+        for (int i = 0; i < MAX_ROOMS; i++) {
+            delete rooms[i];
+        }
+    }
+
+
 
 };
 
