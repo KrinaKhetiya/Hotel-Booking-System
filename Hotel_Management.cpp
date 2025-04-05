@@ -13,16 +13,15 @@ class Room {
         roomNumber = number;
         isBooked = false;
     }
-
-void displayRooms()
-    {
-        cout << "\nRoom Status:\n";
-        for (int i = 0; i < MAX_ROOMS; i++)
-        {
-            rooms[i]->displayRoom();
+void bookRoom(string name) {
+        if (isBooked) {
+            cout << "Sorry, this room is already booked.\n";
+        } else {
+            customerName = name;
+            isBooked = true;
+            cout << "Room " << roomNumber << " successfully booked for " << name << "!\n";
         }
-    }
-};
+}
 
 // for hotel system
 class Hotel {
@@ -53,8 +52,24 @@ void displayRooms()
         }
     }
 
-};
-
+}
+void bookRoom() {
+        int roomChoice;
+        string name;
+        
+        cout << "Enter your name: ";
+        cin >> name;
+        
+        cout << "Enter the room number to book (1 to " << MAX_ROOMS << "): ";
+        cin >> roomChoice;
+        
+        if (roomChoice < 1 || roomChoice > MAX_ROOMS) {
+            cout << "Invalid room number. Please try again.\n";
+            return;
+        }
+        
+        rooms[roomChoice - 1]->bookRoom(name);
+    }
 
 int main() {
     
