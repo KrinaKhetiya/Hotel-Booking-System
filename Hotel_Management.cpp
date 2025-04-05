@@ -40,6 +40,15 @@ public:
         for (int i = 0; i < MAX_ROOMS; i++) {
             delete rooms[i];
         }
+       void cancelBooking() {
+        if (!isBooked) {
+            cout << "This room is not booked.\n";
+        } else {
+            isBooked = false;
+            customerName = "";
+            cout << "Booking for room " << roomNumber << " canceled.\n";
+        }
+    }
     }
 
 
@@ -70,7 +79,19 @@ void bookRoom() {
         
         rooms[roomChoice - 1]->bookRoom(name);
     }
-
+void cancelBooking() {
+        int roomChoice;
+        
+        cout << "Enter the room number to cancel booking (1 to " << MAX_ROOMS << "): ";
+        cin >> roomChoice;
+        
+        if (roomChoice < 1 || roomChoice > MAX_ROOMS) {
+            cout << "Invalid room number. Please try again.\n";
+            return;
+        }
+        
+        rooms[roomChoice - 1]->cancelBooking();
+    }
 int main() {
     
     
