@@ -13,6 +13,15 @@ class Room {
         roomNumber = number;
         isBooked = false;
     }
+
+void displayRooms()
+    {
+        cout << "\nRoom Status:\n";
+        for (int i = 0; i < MAX_ROOMS; i++)
+        {
+            rooms[i]->displayRoom();
+        }
+    }
 };
 
 // for hotel system
@@ -35,6 +44,14 @@ public:
     }
 
 
+void displayRooms()
+    {
+        cout << "\nRoom Status:\n";
+        for (int i = 0; i < MAX_ROOMS; i++)
+        {
+            rooms[i]->displayRoom();
+        }
+    }
 
 };
 
