@@ -13,6 +13,19 @@ class Room {
         roomNumber = number;
         isBooked = false;
     }
+void displayRoom()
+    {
+        cout << "Room " << roomNumber << ": ";
+        if (isBooked)
+        {
+            cout << "Booked by " << customerName << "\n";
+        }
+        else
+        {
+            cout << "Available\n";
+        }
+    }
+
 void bookRoom(string name) {
         if (isBooked) {
             cout << "Sorry, this room is already booked.\n";
@@ -21,7 +34,8 @@ void bookRoom(string name) {
             isBooked = true;
             cout << "Room " << roomNumber << " successfully booked for " << name << "!\n";
         }
-   void modifyBooking(string newName) {
+   
+void modifyBooking(string newName) {
         if (!isBooked) {
             cout << "This room is not booked.\n";
         } else {
