@@ -72,15 +72,7 @@ public:
         for (int i = 0; i < MAX_ROOMS; i++) {
             delete rooms[i];
         }
-       void cancelBooking() {
-        if (!isBooked) {
-            cout << "This room is not booked.\n";
-        } else {
-            isBooked = false;
-            customerName = "";
-            cout << "Booking for room " << roomNumber << " canceled.\n";
-        }
-    }
+      
     }
 
 
@@ -144,6 +136,9 @@ void cancelBooking() {
 
     };
 int main() {
+   
+    Hotel hotel; // Declare an instance of the Hotel class
+    int choice;  // Declare the choice variable
     
     
     do {
