@@ -43,6 +43,15 @@ void modifyBooking(string newName) {
             cout << "Booking for room " << roomNumber << " successfully modified.\n";
         }
     }
+   void cancelBooking() {
+        if (!isBooked) {
+            cout << "This room is not booked.\n";
+        } else {
+            isBooked = false;
+            customerName = "";
+            cout << "Booking for room " << roomNumber << " canceled.\n";
+        }
+    }
 
 };
 
