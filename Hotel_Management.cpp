@@ -13,6 +13,7 @@ class Room {
         roomNumber = number;
         isBooked = false;
     }
+
 void displayRoom()
     {
         cout << "Room " << roomNumber << ": ";
@@ -34,7 +35,8 @@ void bookRoom(string name) {
             isBooked = true;
             cout << "Room " << roomNumber << " successfully booked for " << name << "!\n";
         }
-   
+}
+
 void modifyBooking(string newName) {
         if (!isBooked) {
             cout << "This room is not booked.\n";
@@ -85,7 +87,7 @@ void displayRooms()
         }
     }
 
-}
+
 void bookRoom() {
         int roomChoice;
         string name;
@@ -103,6 +105,7 @@ void bookRoom() {
         
         rooms[roomChoice - 1]->bookRoom(name);
     }
+
 void cancelBooking() {
         int roomChoice;
         
@@ -115,6 +118,7 @@ void cancelBooking() {
         }
         
         rooms[roomChoice - 1]->cancelBooking();
+}
 
     void modifyBooking() {
         int roomChoice;
