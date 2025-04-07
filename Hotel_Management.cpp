@@ -21,7 +21,16 @@ void bookRoom(string name) {
             isBooked = true;
             cout << "Room " << roomNumber << " successfully booked for " << name << "!\n";
         }
-}
+   void modifyBooking(string newName) {
+        if (!isBooked) {
+            cout << "This room is not booked.\n";
+        } else {
+            customerName = newName;
+            cout << "Booking for room " << roomNumber << " successfully modified.\n";
+        }
+    }
+
+};
 
 // for hotel system
 class Hotel {
@@ -91,7 +100,26 @@ void cancelBooking() {
         }
         
         rooms[roomChoice - 1]->cancelBooking();
+
+    void modifyBooking() {
+        int roomChoice;
+        
+        cout << "Enter the room number to modify booking (1 to " << MAX_ROOMS << "): ";
+        cin >> roomChoice;
+        
+        if (roomChoice < 1 || roomChoice > MAX_ROOMS) {
+            cout << "Invalid room number. Please try again.\n";
+            return;
+        }
+        
+        string newName;
+        cout << "Enter the new name for the booking: ";
+        cin >> newName;
+        
+        rooms[roomChoice - 1]->modifyBooking(newName);
     }
+
+    };
 int main() {
     
     
